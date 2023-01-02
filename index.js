@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path')
 const app = express();
-const PORT = 3002;
+const PORT = process.env.PORT;
 
 app.get('/records', (req, res) => {
     // console.log(req.query);
